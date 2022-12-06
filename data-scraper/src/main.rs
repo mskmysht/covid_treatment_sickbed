@@ -1,26 +1,57 @@
-use std::{error::Error, ffi::OsStr, fs::File, io::Write, path::Path};
+use std::{
+    fs::File,
+    io::{self, Write},
+    path::Path,
+};
 
 use chrono::{DateTime, TimeZone};
 use chrono_tz::{Asia::Tokyo, Tz};
 use lazy_regex::regex;
 use scraper::{Html, Selector};
 
+#[derive(thiserror::Error, Debug)]
+enum MyError {
+    #[error("{0}: No such directory")]
+    DirNotFound(String),
+    #[error("request failed")]
+    RequestFailed(#[from] reqwest::Error),
+    #[error("system file io error")]
+    IoError(#[from] io::Error),
+}
+
 #[argopt::cmd]
 #[tokio::main]
-async fn main(save_to: String, n: Option<usize>) -> Result<(), Box<dyn Error>> {
+async fn main(save_to: String, n: Option<usize>) {
+    if let Err(e) = run(save_to, n).await {
+        println!("[error] {e}");
+    }
+}
+
+async fn run(save_to: String, n: Option<usize>) -> Result<(), MyError> {
+    let dir = Path::new(&save_to);
+    if !dir.exists() {
+        return Err(MyError::DirNotFound(save_to));
+    }
+
     let body = reqwest::get("https://www.mhlw.go.jp/stf/seisakunitsuite/newpage_00023.html")
         .await?
         .text()
         .await?;
 
     for r in parse_html(&body, n) {
-        let ext = Path::new(&r.path).extension().unwrap_or(OsStr::new(""));
-        let filename = r.timestamp.format("%Y%m%dT%H%M%Z").to_string();
+        let filename = {
+            let name = r.timestamp.format("%Y%m%dT%H%M%Z").to_string();
+            if let Some(ext) = Path::new(&r.path).extension().and_then(|s| s.to_str()) {
+                format!("{name}.{ext}")
+            } else {
+                name
+            }
+        };
         let data = reqwest::get(format!("https://www.mhlw.go.jp/{}", r.path))
             .await?
             .bytes()
             .await?;
-        let path = Path::new(&save_to).join(filename).with_extension(ext);
+        let path = dir.join(filename);
         if path.exists() {
             println!("[warn] file {} already exists.", path.display());
             continue;
