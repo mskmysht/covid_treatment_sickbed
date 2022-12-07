@@ -136,21 +136,21 @@ fn extract_datetime(title: &str) -> Option<DateTime<Tz>> {
         r"^.*（(?P<year>.+)年(?P<month>.+)月(?P<day>.+)日(?P<hour>.+)時((?P<minute>.+)分|)時点）$"
     );
     let caps = re.captures(&title)?;
-    let year = to_half_digits(caps.name("year").unwrap().as_str())?
+    let year = util::to_half_digits(caps.name("year").unwrap().as_str())?
         .parse()
         .unwrap();
-    let month = to_half_digits(caps.name("month").unwrap().as_str())?
+    let month = util::to_half_digits(caps.name("month").unwrap().as_str())?
         .parse()
         .unwrap();
-    let day = to_half_digits(caps.name("day").unwrap().as_str())?
+    let day = util::to_half_digits(caps.name("day").unwrap().as_str())?
         .parse()
         .unwrap();
-    let hour = to_half_digits(caps.name("hour").unwrap().as_str())?
+    let hour = util::to_half_digits(caps.name("hour").unwrap().as_str())?
         .parse()
         .unwrap();
     let min = caps
         .name("minute")
-        .and_then(|m| to_half_digits(m.as_str()))
+        .and_then(|m| util::to_half_digits(m.as_str()))
         .map(|s| s.parse().unwrap())
         .unwrap_or(0);
     let dt = Tokyo
@@ -158,22 +158,6 @@ fn extract_datetime(title: &str) -> Option<DateTime<Tz>> {
         .unwrap();
 
     Some(dt)
-}
-
-fn to_half_digits(fd: &str) -> Option<String> {
-    fd.chars()
-        .map(|c| {
-            match c {
-                // convert FULLWIDTH DIGIT ZERO ~ NINE to ascii 0-9
-                '\u{FF10}'..='\u{FF19}' => {
-                    let k = u32::try_from(c).unwrap() - 0xFF10 + 0x0030;
-                    char::from_u32(k)
-                }
-                '\u{0030}'..='\u{0039}' => Some(c),
-                _ => None,
-            }
-        })
-        .collect::<Option<String>>()
 }
 
 #[cfg(test)]
