@@ -1,0 +1,989 @@
+[
+  {
+    "prefecture": {
+      "code": "01",
+      "name": "北海道"
+    },
+    "phase": {
+      "current": 3,
+      "maximum": 3,
+      "mode": "Normal"
+    },
+    "inpatient_count": {
+      "total": 1276,
+      "dedicated": 748,
+      "extra": 0
+    },
+    "dedicated_bed_count": {
+      "available_or_assigned": 2258,
+      "guaranteed": 2258,
+      "extra_guaranteed": 0
+    }
+  },
+  {
+    "prefecture": {
+      "code": "02",
+      "name": "青森県"
+    },
+    "phase": {
+      "current": 3,
+      "maximum": 5,
+      "mode": "Normal"
+    },
+    "inpatient_count": {
+      "total": 269,
+      "dedicated": 203,
+      "extra": 0
+    },
+    "dedicated_bed_count": {
+      "available_or_assigned": 467,
+      "guaranteed": 484,
+      "extra_guaranteed": 0
+    }
+  },
+  {
+    "prefecture": {
+      "code": "03",
+      "name": "岩手県"
+    },
+    "phase": {
+      "current": 2,
+      "maximum": 2,
+      "mode": "Normal"
+    },
+    "inpatient_count": {
+      "total": 156,
+      "dedicated": 105,
+      "extra": 0
+    },
+    "dedicated_bed_count": {
+      "available_or_assigned": 343,
+      "guaranteed": 343,
+      "extra_guaranteed": 0
+    }
+  },
+  {
+    "prefecture": {
+      "code": "04",
+      "name": "宮城県"
+    },
+    "phase": {
+      "current": 1,
+      "maximum": 1,
+      "mode": "Emergency"
+    },
+    "inpatient_count": {
+      "total": 620,
+      "dedicated": 180,
+      "extra": 0
+    },
+    "dedicated_bed_count": {
+      "available_or_assigned": 580,
+      "guaranteed": 580,
+      "extra_guaranteed": 0
+    }
+  },
+  {
+    "prefecture": {
+      "code": "05",
+      "name": "秋田県"
+    },
+    "phase": {
+      "current": 6,
+      "maximum": 6,
+      "mode": "Normal"
+    },
+    "inpatient_count": {
+      "total": 190,
+      "dedicated": 131,
+      "extra": 0
+    },
+    "dedicated_bed_count": {
+      "available_or_assigned": 326,
+      "guaranteed": 326,
+      "extra_guaranteed": 0
+    }
+  },
+  {
+    "prefecture": {
+      "code": "06",
+      "name": "山形県"
+    },
+    "phase": {
+      "current": 1,
+      "maximum": 2,
+      "mode": "Emergency"
+    },
+    "inpatient_count": {
+      "total": 289,
+      "dedicated": 99,
+      "extra": 0
+    },
+    "dedicated_bed_count": {
+      "available_or_assigned": 283,
+      "guaranteed": 283,
+      "extra_guaranteed": 0
+    }
+  },
+  {
+    "prefecture": {
+      "code": "07",
+      "name": "福島県"
+    },
+    "phase": {
+      "current": 3,
+      "maximum": 3,
+      "mode": "Normal"
+    },
+    "inpatient_count": {
+      "total": 344,
+      "dedicated": 277,
+      "extra": 0
+    },
+    "dedicated_bed_count": {
+      "available_or_assigned": 757,
+      "guaranteed": 769,
+      "extra_guaranteed": 8
+    }
+  },
+  {
+    "prefecture": {
+      "code": "08",
+      "name": "茨城県"
+    },
+    "phase": {
+      "current": 1,
+      "maximum": 1,
+      "mode": "Emergency"
+    },
+    "inpatient_count": {
+      "total": 371,
+      "dedicated": 371,
+      "extra": 0
+    },
+    "dedicated_bed_count": {
+      "available_or_assigned": 800,
+      "guaranteed": 800,
+      "extra_guaranteed": 0
+    }
+  },
+  {
+    "prefecture": {
+      "code": "09",
+      "name": "栃木県"
+    },
+    "phase": {
+      "current": 3,
+      "maximum": 3,
+      "mode": "Normal"
+    },
+    "inpatient_count": {
+      "total": 232,
+      "dedicated": 232,
+      "extra": 10
+    },
+    "dedicated_bed_count": {
+      "available_or_assigned": 578,
+      "guaranteed": 680,
+      "extra_guaranteed": 102
+    }
+  },
+  {
+    "prefecture": {
+      "code": "10",
+      "name": "群馬県"
+    },
+    "phase": {
+      "current": 4,
+      "maximum": 4,
+      "mode": "Normal"
+    },
+    "inpatient_count": {
+      "total": 251,
+      "dedicated": 230,
+      "extra": 0
+    },
+    "dedicated_bed_count": {
+      "available_or_assigned": 669,
+      "guaranteed": 669,
+      "extra_guaranteed": 0
+    }
+  },
+  {
+    "prefecture": {
+      "code": "11",
+      "name": "埼玉県"
+    },
+    "phase": {
+      "current": 4,
+      "maximum": 4,
+      "mode": "Normal"
+    },
+    "inpatient_count": {
+      "total": 924,
+      "dedicated": 836,
+      "extra": 0
+    },
+    "dedicated_bed_count": {
+      "available_or_assigned": 1815,
+      "guaranteed": 1922,
+      "extra_guaranteed": 130
+    }
+  },
+  {
+    "prefecture": {
+      "code": "12",
+      "name": "千葉県"
+    },
+    "phase": {
+      "current": 2,
+      "maximum": 2,
+      "mode": "Normal"
+    },
+    "inpatient_count": {
+      "total": 1251,
+      "dedicated": 671,
+      "extra": 30
+    },
+    "dedicated_bed_count": {
+      "available_or_assigned": 1762,
+      "guaranteed": 1838,
+      "extra_guaranteed": 224
+    }
+  },
+  {
+    "prefecture": {
+      "code": "13",
+      "name": "東京都"
+    },
+    "phase": {
+      "current": 2,
+      "maximum": 2,
+      "mode": "Normal"
+    },
+    "inpatient_count": {
+      "total": 2661,
+      "dedicated": 2532,
+      "extra": 216
+    },
+    "dedicated_bed_count": {
+      "available_or_assigned": 6901,
+      "guaranteed": 7468,
+      "extra_guaranteed": 551
+    }
+  },
+  {
+    "prefecture": {
+      "code": "14",
+      "name": "神奈川県"
+    },
+    "phase": {
+      "current": 3,
+      "maximum": 4,
+      "mode": "Normal"
+    },
+    "inpatient_count": {
+      "total": 991,
+      "dedicated": 991,
+      "extra": 35
+    },
+    "dedicated_bed_count": {
+      "available_or_assigned": 2084,
+      "guaranteed": 2100,
+      "extra_guaranteed": 143
+    }
+  },
+  {
+    "prefecture": {
+      "code": "15",
+      "name": "新潟県"
+    },
+    "phase": {
+      "current": 3,
+      "maximum": 4,
+      "mode": "Normal"
+    },
+    "inpatient_count": {
+      "total": 272,
+      "dedicated": 272,
+      "extra": 0
+    },
+    "dedicated_bed_count": {
+      "available_or_assigned": 597,
+      "guaranteed": 688,
+      "extra_guaranteed": 0
+    }
+  },
+  {
+    "prefecture": {
+      "code": "16",
+      "name": "富山県"
+    },
+    "phase": {
+      "current": 3,
+      "maximum": 3,
+      "mode": "Normal"
+    },
+    "inpatient_count": {
+      "total": 179,
+      "dedicated": 175,
+      "extra": 0
+    },
+    "dedicated_bed_count": {
+      "available_or_assigned": 471,
+      "guaranteed": 481,
+      "extra_guaranteed": 0
+    }
+  },
+  {
+    "prefecture": {
+      "code": "17",
+      "name": "石川県"
+    },
+    "phase": {
+      "current": 2,
+      "maximum": 2,
+      "mode": "Emergency"
+    },
+    "inpatient_count": {
+      "total": 183,
+      "dedicated": 183,
+      "extra": 0
+    },
+    "dedicated_bed_count": {
+      "available_or_assigned": 504,
+      "guaranteed": 504,
+      "extra_guaranteed": 0
+    }
+  },
+  {
+    "prefecture": {
+      "code": "18",
+      "name": "福井県"
+    },
+    "phase": {
+      "current": 4,
+      "maximum": 4,
+      "mode": "Normal"
+    },
+    "inpatient_count": {
+      "total": 164,
+      "dedicated": 164,
+      "extra": 0
+    },
+    "dedicated_bed_count": {
+      "available_or_assigned": 387,
+      "guaranteed": 501,
+      "extra_guaranteed": 100
+    }
+  },
+  {
+    "prefecture": {
+      "code": "19",
+      "name": "山梨県"
+    },
+    "phase": {
+      "current": 3,
+      "maximum": 5,
+      "mode": "Normal"
+    },
+    "inpatient_count": {
+      "total": 71,
+      "dedicated": 71,
+      "extra": 0
+    },
+    "dedicated_bed_count": {
+      "available_or_assigned": 267,
+      "guaranteed": 433,
+      "extra_guaranteed": 0
+    }
+  },
+  {
+    "prefecture": {
+      "code": "20",
+      "name": "長野県"
+    },
+    "phase": {
+      "current": 3,
+      "maximum": 3,
+      "mode": "Normal"
+    },
+    "inpatient_count": {
+      "total": 263,
+      "dedicated": 197,
+      "extra": 0
+    },
+    "dedicated_bed_count": {
+      "available_or_assigned": 521,
+      "guaranteed": 531,
+      "extra_guaranteed": 0
+    }
+  },
+  {
+    "prefecture": {
+      "code": "21",
+      "name": "岐阜県"
+    },
+    "phase": {
+      "current": 4,
+      "maximum": 4,
+      "mode": "Normal"
+    },
+    "inpatient_count": {
+      "total": 432,
+      "dedicated": 390,
+      "extra": 0
+    },
+    "dedicated_bed_count": {
+      "available_or_assigned": 914,
+      "guaranteed": 914,
+      "extra_guaranteed": 0
+    }
+  },
+  {
+    "prefecture": {
+      "code": "22",
+      "name": "静岡県"
+    },
+    "phase": {
+      "current": 3,
+      "maximum": 3,
+      "mode": "Normal"
+    },
+    "inpatient_count": {
+      "total": 389,
+      "dedicated": 314,
+      "extra": 0
+    },
+    "dedicated_bed_count": {
+      "available_or_assigned": 856,
+      "guaranteed": 856,
+      "extra_guaranteed": 0
+    }
+  },
+  {
+    "prefecture": {
+      "code": "23",
+      "name": "愛知県"
+    },
+    "phase": {
+      "current": 2,
+      "maximum": 2,
+      "mode": "Normal"
+    },
+    "inpatient_count": {
+      "total": 2098,
+      "dedicated": 1162,
+      "extra": 0
+    },
+    "dedicated_bed_count": {
+      "available_or_assigned": 1756,
+      "guaranteed": 1756,
+      "extra_guaranteed": 0
+    }
+  },
+  {
+    "prefecture": {
+      "code": "24",
+      "name": "三重県"
+    },
+    "phase": {
+      "current": 2,
+      "maximum": 3,
+      "mode": "Emergency"
+    },
+    "inpatient_count": {
+      "total": 301,
+      "dedicated": 243,
+      "extra": 0
+    },
+    "dedicated_bed_count": {
+      "available_or_assigned": 569,
+      "guaranteed": 592,
+      "extra_guaranteed": 10
+    }
+  },
+  {
+    "prefecture": {
+      "code": "25",
+      "name": "滋賀県"
+    },
+    "phase": {
+      "current": 1,
+      "maximum": 1,
+      "mode": "Emergency"
+    },
+    "inpatient_count": {
+      "total": 530,
+      "dedicated": 259,
+      "extra": 8
+    },
+    "dedicated_bed_count": {
+      "available_or_assigned": 509,
+      "guaranteed": 511,
+      "extra_guaranteed": 30
+    }
+  },
+  {
+    "prefecture": {
+      "code": "26",
+      "name": "京都府"
+    },
+    "phase": {
+      "current": 2,
+      "maximum": 2,
+      "mode": "Normal"
+    },
+    "inpatient_count": {
+      "total": 375,
+      "dedicated": 375,
+      "extra": 0
+    },
+    "dedicated_bed_count": {
+      "available_or_assigned": 1033,
+      "guaranteed": 1033,
+      "extra_guaranteed": 110
+    }
+  },
+  {
+    "prefecture": {
+      "code": "27",
+      "name": "大阪府"
+    },
+    "phase": {
+      "current": 1,
+      "maximum": 1,
+      "mode": "Emergency"
+    },
+    "inpatient_count": {
+      "total": 1877,
+      "dedicated": 1877,
+      "extra": 0
+    },
+    "dedicated_bed_count": {
+      "available_or_assigned": 4079,
+      "guaranteed": 4753,
+      "extra_guaranteed": 0
+    }
+  },
+  {
+    "prefecture": {
+      "code": "28",
+      "name": "兵庫県"
+    },
+    "phase": {
+      "current": 5,
+      "maximum": 5,
+      "mode": "Normal"
+    },
+    "inpatient_count": {
+      "total": 711,
+      "dedicated": 711,
+      "extra": 0
+    },
+    "dedicated_bed_count": {
+      "available_or_assigned": 1712,
+      "guaranteed": 1712,
+      "extra_guaranteed": 0
+    }
+  },
+  {
+    "prefecture": {
+      "code": "29",
+      "name": "奈良県"
+    },
+    "phase": {
+      "current": 3,
+      "maximum": 3,
+      "mode": "Normal"
+    },
+    "inpatient_count": {
+      "total": 153,
+      "dedicated": 121,
+      "extra": 0
+    },
+    "dedicated_bed_count": {
+      "available_or_assigned": 542,
+      "guaranteed": 542,
+      "extra_guaranteed": 0
+    }
+  },
+  {
+    "prefecture": {
+      "code": "30",
+      "name": "和歌山県"
+    },
+    "phase": {
+      "current": 3,
+      "maximum": 3,
+      "mode": "Normal"
+    },
+    "inpatient_count": {
+      "total": 229,
+      "dedicated": 229,
+      "extra": 0
+    },
+    "dedicated_bed_count": {
+      "available_or_assigned": 545,
+      "guaranteed": 545,
+      "extra_guaranteed": 0
+    }
+  },
+  {
+    "prefecture": {
+      "code": "31",
+      "name": "鳥取県"
+    },
+    "phase": {
+      "current": 3,
+      "maximum": 3,
+      "mode": "Normal"
+    },
+    "inpatient_count": {
+      "total": 134,
+      "dedicated": 134,
+      "extra": 0
+    },
+    "dedicated_bed_count": {
+      "available_or_assigned": 285,
+      "guaranteed": 351,
+      "extra_guaranteed": 5
+    }
+  },
+  {
+    "prefecture": {
+      "code": "32",
+      "name": "島根県"
+    },
+    "phase": {
+      "current": 5,
+      "maximum": 5,
+      "mode": "Normal"
+    },
+    "inpatient_count": {
+      "total": 140,
+      "dedicated": 102,
+      "extra": 0
+    },
+    "dedicated_bed_count": {
+      "available_or_assigned": 361,
+      "guaranteed": 371,
+      "extra_guaranteed": 0
+    }
+  },
+  {
+    "prefecture": {
+      "code": "33",
+      "name": "岡山県"
+    },
+    "phase": {
+      "current": 4,
+      "maximum": 4,
+      "mode": "Normal"
+    },
+    "inpatient_count": {
+      "total": 281,
+      "dedicated": 251,
+      "extra": 0
+    },
+    "dedicated_bed_count": {
+      "available_or_assigned": 600,
+      "guaranteed": 629,
+      "extra_guaranteed": 0
+    }
+  },
+  {
+    "prefecture": {
+      "code": "34",
+      "name": "広島県"
+    },
+    "phase": {
+      "current": 2,
+      "maximum": 2,
+      "mode": "Emergency"
+    },
+    "inpatient_count": {
+      "total": 461,
+      "dedicated": 329,
+      "extra": 0
+    },
+    "dedicated_bed_count": {
+      "available_or_assigned": 872,
+      "guaranteed": 933,
+      "extra_guaranteed": 99
+    }
+  },
+  {
+    "prefecture": {
+      "code": "35",
+      "name": "山口県"
+    },
+    "phase": {
+      "current": 4,
+      "maximum": 4,
+      "mode": "Normal"
+    },
+    "inpatient_count": {
+      "total": 260,
+      "dedicated": 260,
+      "extra": 0
+    },
+    "dedicated_bed_count": {
+      "available_or_assigned": 680,
+      "guaranteed": 680,
+      "extra_guaranteed": 0
+    }
+  },
+  {
+    "prefecture": {
+      "code": "36",
+      "name": "徳島県"
+    },
+    "phase": {
+      "current": 4,
+      "maximum": 5,
+      "mode": "Normal"
+    },
+    "inpatient_count": {
+      "total": 100,
+      "dedicated": 100,
+      "extra": 0
+    },
+    "dedicated_bed_count": {
+      "available_or_assigned": 254,
+      "guaranteed": 286,
+      "extra_guaranteed": 22
+    }
+  },
+  {
+    "prefecture": {
+      "code": "37",
+      "name": "香川県"
+    },
+    "phase": {
+      "current": 3,
+      "maximum": 3,
+      "mode": "Normal"
+    },
+    "inpatient_count": {
+      "total": 149,
+      "dedicated": 104,
+      "extra": 0
+    },
+    "dedicated_bed_count": {
+      "available_or_assigned": 271,
+      "guaranteed": 271,
+      "extra_guaranteed": 0
+    }
+  },
+  {
+    "prefecture": {
+      "code": "38",
+      "name": "愛媛県"
+    },
+    "phase": {
+      "current": 1,
+      "maximum": 1,
+      "mode": "Emergency"
+    },
+    "inpatient_count": {
+      "total": 218,
+      "dedicated": 136,
+      "extra": 0
+    },
+    "dedicated_bed_count": {
+      "available_or_assigned": 464,
+      "guaranteed": 488,
+      "extra_guaranteed": 10
+    }
+  },
+  {
+    "prefecture": {
+      "code": "39",
+      "name": "高知県"
+    },
+    "phase": {
+      "current": 5,
+      "maximum": 5,
+      "mode": "Normal"
+    },
+    "inpatient_count": {
+      "total": 203,
+      "dedicated": 137,
+      "extra": 0
+    },
+    "dedicated_bed_count": {
+      "available_or_assigned": 396,
+      "guaranteed": 396,
+      "extra_guaranteed": 0
+    }
+  },
+  {
+    "prefecture": {
+      "code": "40",
+      "name": "福岡県"
+    },
+    "phase": {
+      "current": 5,
+      "maximum": 5,
+      "mode": "Normal"
+    },
+    "inpatient_count": {
+      "total": 1893,
+      "dedicated": 820,
+      "extra": 0
+    },
+    "dedicated_bed_count": {
+      "available_or_assigned": 2024,
+      "guaranteed": 2024,
+      "extra_guaranteed": 0
+    }
+  },
+  {
+    "prefecture": {
+      "code": "41",
+      "name": "佐賀県"
+    },
+    "phase": {
+      "current": 4,
+      "maximum": 5,
+      "mode": "Normal"
+    },
+    "inpatient_count": {
+      "total": 294,
+      "dedicated": 205,
+      "extra": 0
+    },
+    "dedicated_bed_count": {
+      "available_or_assigned": 547,
+      "guaranteed": 590,
+      "extra_guaranteed": 50
+    }
+  },
+  {
+    "prefecture": {
+      "code": "42",
+      "name": "長崎県"
+    },
+    "phase": {
+      "current": 2,
+      "maximum": 2,
+      "mode": "Emergency"
+    },
+    "inpatient_count": {
+      "total": 519,
+      "dedicated": 317,
+      "extra": 0
+    },
+    "dedicated_bed_count": {
+      "available_or_assigned": 666,
+      "guaranteed": 705,
+      "extra_guaranteed": 0
+    }
+  },
+  {
+    "prefecture": {
+      "code": "43",
+      "name": "熊本県"
+    },
+    "phase": {
+      "current": 2,
+      "maximum": 2,
+      "mode": "Emergency"
+    },
+    "inpatient_count": {
+      "total": 431,
+      "dedicated": 329,
+      "extra": 0
+    },
+    "dedicated_bed_count": {
+      "available_or_assigned": 1025,
+      "guaranteed": 1025,
+      "extra_guaranteed": 0
+    }
+  },
+  {
+    "prefecture": {
+      "code": "44",
+      "name": "大分県"
+    },
+    "phase": {
+      "current": 3,
+      "maximum": 4,
+      "mode": "Normal"
+    },
+    "inpatient_count": {
+      "total": 252,
+      "dedicated": 252,
+      "extra": 0
+    },
+    "dedicated_bed_count": {
+      "available_or_assigned": 469,
+      "guaranteed": 545,
+      "extra_guaranteed": 0
+    }
+  },
+  {
+    "prefecture": {
+      "code": "45",
+      "name": "宮崎県"
+    },
+    "phase": {
+      "current": 1,
+      "maximum": 1,
+      "mode": "Emergency"
+    },
+    "inpatient_count": {
+      "total": 350,
+      "dedicated": 130,
+      "extra": 0
+    },
+    "dedicated_bed_count": {
+      "available_or_assigned": 381,
+      "guaranteed": 400,
+      "extra_guaranteed": 0
+    }
+  },
+  {
+    "prefecture": {
+      "code": "46",
+      "name": "鹿児島県"
+    },
+    "phase": {
+      "current": 2,
+      "maximum": 2,
+      "mode": "Emergency"
+    },
+    "inpatient_count": {
+      "total": 368,
+      "dedicated": 308,
+      "extra": 0
+    },
+    "dedicated_bed_count": {
+      "available_or_assigned": 794,
+      "guaranteed": 794,
+      "extra_guaranteed": 0
+    }
+  },
+  {
+    "prefecture": {
+      "code": "47",
+      "name": "沖縄県"
+    },
+    "phase": {
+      "current": 5,
+      "maximum": 5,
+      "mode": "Normal"
+    },
+    "inpatient_count": {
+      "total": 302,
+      "dedicated": 302,
+      "extra": 0
+    },
+    "dedicated_bed_count": {
+      "available_or_assigned": 728,
+      "guaranteed": 728,
+      "extra_guaranteed": 25
+    }
+  }
+]
